@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .Shadow{
+        border:none;
+        background-color: green;
+        color: white;
+        padding-inline: 14px;
+        padding-block: 7px;
+        cursor: pointer;
+        transition: 0.15s;
+        box-shadow: 3px 3px 5px black;
+    }
+    .Shadow:active{
+        margin-top: 3px;
+        margin-left:3px;
+        box-shadow: 0 0 0;
+    }
+</style>
+<body>
+    <button class="Shadow">Shadow</button>
+</body>
+</html>
