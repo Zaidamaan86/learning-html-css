@@ -11,10 +11,16 @@
             margin: 0;
             margin-left: 5px;
         }
+        .main-grid{
+            display: grid;
+            column-gap: 13px;
+            grid-template-columns: 170px 170px 170px;
+        }
         .container{
             box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-            display: inline-block;
-            margin-right: 10px;
+            display: grid;
+            grid-template-columns: ;
+            /* margin-right: 10px; */
     
         }
         .img{
@@ -22,6 +28,15 @@
             height: 200px;
             object-fit: cover;
             margin-bottom: 2px;
+        }
+        .img-1{
+            width: 20px;
+            height: 20px;
+            object-fit: cover;
+            border-radius: 40px;
+        }
+        .image-cont{
+            display: block;
         }
         .name{
             font-weight: bolder;
@@ -41,34 +56,53 @@
             background-color: rgb(125, 125, 249);
             color: white;
             border: 0;
-            padding: 4px;
+            padding: 7px;
             padding-inline: 9px;
             font-size: 9px;
-            border-radius: 2px;
+            border-radius: 4px;
         }
     </style>
 </head>
 <body>
+    <div class="main-grid">
+        <div class="container">
+            <div>
+                <img class="img" src="hq721.webp">
+            </div>
+            <div>
+                <p class="name">Oliver</p>
+                <div class="image-cont">
+                    <img class="img-1" src="hq721.webp">
+                </div>
+                <p class="mutual">2 mutual friends</p>
+                <button class="friend">Add Friend</button>
+            </div>
+            
+        </div>
     <div class="container">
-        <img class="img" src="Youtube clone/thumbnail/hq721.webp">
-        <p class="name">Oliver</p>
-        <p class="mutual">2 mutual friends</p>
-        <button class="friend">Add Friend</button>
-
+        <div>
+            <img class="img" src="hq721.webp">
+        </div>
+        <div>
+            <p class="name">Oliver</p>
+            <div>
+                <p class="mutual">2 mutual friends</p>
+                <button class="friend">Add Friend</button>
+            </div>
+        </div>
     </div>
     <div class="container">
-        <img class="img" src="Youtube clone/thumbnail/hq721.webp">
-        <p class="name">Oliver</p>
-        <p class="mutual">2 mutual friends</p>
-        <button class="friend">Add Friend</button>
-
+        <DIV>
+            <img class="img" src="hq721.webp">
+        </DIV>
+            <div>
+                <p class="name">Oliver</p>
+                <div>
+                    <p class="mutual">2 mutual friends</p>
+                    <button class="friend">Add Friend</button>
+                </div>
+            </div>
     </div>
-    <div class="container">
-        <img class="img" src="Youtube clone/thumbnail/hq721.webp">
-        <p class="name">Oliver</p>
-        <p class="mutual">2 mutual friends</p>
-        <button class="friend">Add Friend</button>
-
     </div>
 </body>
 </html>
